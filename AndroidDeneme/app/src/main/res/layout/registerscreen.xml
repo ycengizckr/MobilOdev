@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor2">
+
+
+    <EditText
+        android:id="@+id/registerName_text"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Ad"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/registerSName_text"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Soyad"
+        app:layout_constraintEnd_toEndOf="@+id/registerName_text"
+        app:layout_constraintStart_toStartOf="@+id/registerName_text"
+        app:layout_constraintTop_toBottomOf="@+id/registerName_text" />
+
+    <EditText
+        android:id="@+id/registerID_text"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Numara"
+        android:textColorHint="@color/white"
+        android:inputType="number"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/registerSName_text"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/registerSName_text"
+        app:layout_constraintTop_toBottomOf="@+id/registerSName_text" />
+
+    <EditText
+        android:id="@+id/registerMail_text"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:hint="E-Mail"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/registerID_text"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/registerID_text"
+        app:layout_constraintTop_toBottomOf="@+id/registerID_text" />
+
+    <EditText
+        android:id="@+id/registerPassword_text"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Şifre"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/registerMail_text"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/registerMail_text"
+        app:layout_constraintTop_toBottomOf="@+id/registerMail_text" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Kayıt Ol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/registerPassword_text"
+        app:layout_constraintStart_toStartOf="@+id/registerPassword_text"
+        app:layout_constraintTop_toBottomOf="@+id/registerPassword_text"
+        app:layout_constraintVertical_bias="0.05" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

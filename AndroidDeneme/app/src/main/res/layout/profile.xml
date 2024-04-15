@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor2" >
+
+    <EditText
+        android:id="@+id/profileAd"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Ad"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/profileSoyad"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Soyad"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/profileAd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profileAd"
+        app:layout_constraintTop_toBottomOf="@+id/profileAd" />
+
+    <EditText
+        android:id="@+id/profileNumber"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Telefon Numarası"
+        android:enabled="false"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/profileSoyad"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profileSoyad"
+        app:layout_constraintTop_toBottomOf="@+id/profileSoyad" />
+
+    <EditText
+        android:id="@+id/profileMail"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Mail"
+        android:enabled="false"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/profileNumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profileNumber"
+        app:layout_constraintTop_toBottomOf="@+id/profileNumber" />
+
+    <EditText
+        android:id="@+id/profileSecondMail"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="İkinci Mail"
+        android:enabled="false"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/profileMail"
+        app:layout_constraintStart_toStartOf="@+id/profileMail"
+        app:layout_constraintTop_toBottomOf="@+id/profileMail" />
+
+    <EditText
+        android:id="@+id/profileAccType"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Hesap Düzeyi"
+        android:enabled="false"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/profileSecondMail"
+        app:layout_constraintStart_toStartOf="@+id/profileSecondMail"
+        app:layout_constraintTop_toBottomOf="@+id/profileSecondMail" />
+
+    <EditText
+        android:id="@+id/profileEduType"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Eğitim Düzeyi"
+        android:enabled="false"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/profileAccType"
+        app:layout_constraintStart_toStartOf="@+id/profileAccType"
+        app:layout_constraintTop_toBottomOf="@+id/profileAccType" />
+
+    <EditText
+        android:id="@+id/profileEduSemester"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Eğitim Yarıyılı"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="@+id/profileEduType"
+        app:layout_constraintStart_toStartOf="@+id/profileEduType"
+        app:layout_constraintTop_toBottomOf="@+id/profileEduType" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="169dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="12dp"
+        android:text="Bilgirimi Güncelle"
+        app:layout_constraintEnd_toEndOf="@+id/profileEduSemester"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/profileEduSemester"
+        app:layout_constraintTop_toBottomOf="@+id/profileEduSemester" />
+
+    <Button
+        android:id="@+id/profileSaveButton"
+        android:layout_width="169dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:text="Bilgirimi Kaydet"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/profileEduSemester"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/profileEduSemester"
+        app:layout_constraintTop_toBottomOf="@+id/profileEduSemester" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="139dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/progress_horizontal" />
+
+    <Button
+        android:id="@+id/photoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="60dp"
+        android:text="Fotoğraf Çek"
+        android:visibility="gone"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

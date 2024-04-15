@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor2">
+
+    <EditText
+        android:id="@+id/usurname_text"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="260dp"
+        android:ems="10"
+        android:hint="Kullanıcı adı"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/registerPassword_text"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/usurname_text"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/usurname_text"
+        app:layout_constraintTop_toBottomOf="@+id/usurname_text" />
+
+    <Button
+        android:id="@+id/giris_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Giriş"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/passwordReset_button"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/passwordReset_button"
+        app:layout_constraintTop_toBottomOf="@+id/passwordReset_button"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <Button
+        android:id="@+id/passwordReset_button"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/backgroundColor2"
+        android:gravity="center_horizontal"
+        android:text="Şifremi Unuttum"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/registerPassword_text"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/registerPassword_text"
+        app:layout_constraintTop_toBottomOf="@+id/registerPassword_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
